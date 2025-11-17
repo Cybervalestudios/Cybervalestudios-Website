@@ -1,0 +1,22 @@
+ <!-- Example Post 1 -->
+    <article class="news-card">
+      
+      <div class="content">
+        <h2>Among The Walls — New Game</h2>
+        <p class="date">November 12, 2025</p>
+        <p></p>
+        <a href="news-post1.html" class="read-more">Read More →</a>
+      </div>
+    </article>
+
+
+
+
+    <div class="trailer">
+      <h2>Trailer</h2>
+      <!-- Replace with your YouTube trailer link -->
+      <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" allowfullscreen></iframe>
+    </div>
+
+      <!-- Back button for pages (in Nav bar) -->
+    <a class="brand-link" href="Cybervale Studios Home.html">← Back</a> 

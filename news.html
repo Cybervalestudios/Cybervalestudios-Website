@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Updates | CyberVale Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #0a0f1a;
+      color: #d9e3ff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 4rem;
+      background: rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #b0c7ff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4fa3ff;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, #101a2b, #0a0f1a);
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .hero h1 {
+      color: #4fa3ff;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      color: #9fb6ff;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .news-container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .news-card {
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(79,163,255,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 30px rgba(79,163,255,0.2);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-card .content {
+      padding: 1.5rem;
+    }
+
+    .news-card h2 {
+      color: #4fa3ff;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .news-card .date {
+      font-size: 0.9rem;
+      color: #7a8aad;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .news-card p {
+      color: #c3d1ff;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .read-more {
+      color: #4fa3ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .read-more:hover {
+      color: #69b8ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #7a8aad;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   <div class="logo-wrap">
+          <img src="images/edited-photo (1).png" alt="Cybervale Studios Logo"/>
+        <div>
+          <div class="brand">CyberVale</div>
+          <div class="sub">Studios</div>
+        </div>
+      </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html">Support Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>News & Updates</h1>
+    <p>Stay up to date with the latest from CyberVale Studios</p>
+  </section>
+
+  <section class="news-container">
+   
+   
+    <article class="news-card">
+     <a href="newspost3.html">
+      <div class="content">
+        <h2>Among The Walls New Game!!</h2>
+        <p class="date">October 28, 2025</p>
+        <p>Step into the tiny paws of a hyper-intelligent mouse in Among the Walls, a unique survival adventure set within the hidden corners of a bustling apartment complex </p>
+        <a href="newspost2.html" class="read-more">Read More →</a>
+      </div>
+    </a>
+      
+    </article>
+
+    <!-- Example Post 2 -->
+     
+    <article class="news-card">
+     <a href="newspost2.html">
+      <div class="content">
+        <h2>New Game Reveal Coming Soon!</h2>
+        <p class="date">October 28, 2025</p>
+        <p>We’re excited to announce that our next big title is in early development. Stay tuned for the reveal trailer later this year!</p>
+        <a href="newspost2.html" class="read-more">Read More →</a>
+      </div>
+    </a>
+      
+    </article>
+
+    <!-- Example Post 1 -->
+    <article class="news-card">
+     <a href="newspost1.html">
+      <div class="content">
+        <h2>CyberVale Studios Website Launch</h2>
+        <p class="date">September 14, 2025</p>
+        <p>Our new official website is live! You can now explore our games, read updates, and follow the progress of our upcoming projects.</p>
+        <a href="newspost1.html" class="read-more">Read More →</a>
+      </div>
+     </a> 
+      
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 CyberVale Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

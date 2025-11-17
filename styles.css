@@ -1,0 +1,310 @@
+:root{
+  --bg:#071019;
+  --panel:#0b1620;
+  --muted:#9fb0c0;
+  --accent1:#1C8CFF;
+  --accent2:#3EE1FF;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --max:1100px;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg),#031018 120%);
+  color:#cfeaf8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* container */
+.container{max-width:var(--max);margin:0 auto;padding:28px}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(3,8,12,0.6),transparent);backdrop-filter: blur(6px);box-shadow:0 1px 0 rgba(255,255,255,0.02)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo-wrap{display:flex;gap:12px;align-items:center}
+.logo{filter: drop-shadow(0 6px 18px rgba(28,140,255,0.08));}
+.brand{font-weight:700;letter-spacing:0.6px}
+.sub{font-size:12px;color:var(--muted);margin-top:-2px}
+
+/* nav */
+.top-nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+.top-nav a:hover{color:var(--accent1)}
+
+/* hero */
+.hero{padding:64px 0}
+.hero-inner{display:flex;gap:40px;align-items:center}
+.hero-left{flex:1}
+.hero-right{flex:1;display:flex;justify-content:center}
+h1{font-size:36px;margin:0 0 12px}
+.lead{color:var(--muted);max-width:600px}
+.cta-row{margin-top:20px;display:flex;gap:12px}
+.btn{padding:10px 16px;border-radius:10px;text-decoration:none;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit;font-weight:600}
+.btn.primary{background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#021018;box-shadow:0 6px 24px rgba(28,140,255,0.08)}
+.btn.ghost{border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+
+/* sections */
+.section{padding:56px 0}
+.section.dark{background:linear-gradient(180deg, rgba(3,8,12,0.4), transparent)}
+.section-title{font-size:22px;margin:0 0 8px}
+.muted{color:var(--muted)}
+
+/* games grid */
+.games-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.game-card{display:block;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:12px;border-radius:12px;text-decoration:none;color:inherit;transition:transform .28s ease, box-shadow .28s}
+.game-card:hover{transform:translateY(-6px);box-shadow:0 12px 34px rgba(12,26,36,0.6)}
+.thumbnail{height:120px;border-radius:10px;background-size:cover;background-position:center;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.tag{position:absolute;left:10px;top:10px;background:rgba(0,0,0,0.35);padding:6px 8px;border-radius:999px;font-size:12px;color:var(--accent2)}
+.game-info{padding:10px 6px}
+
+/* news */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.news-post{background:var(--panel);padding:12px;border-radius:10px}
+.post-form{margin-top:14px;background:var(--glass);padding:10px;border-radius:10px;display:flex;flex-direction:column;gap:8px}
+.post-form input, .post-form textarea, .contact-form input, .contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:inherit}
+.form-actions{display:flex;gap:8px;justify-content:flex-end}
+
+/* two-col */
+.two-col{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:10px}
+
+/* small header for inner pages */
+.site-header.small{position:static;padding:10px 0}
+.brand-link{color:var(--muted);text-decoration:none;margin-right:10px}
+
+/* game page */
+.game-hero{display:grid;grid-template-columns:460px 1fr;gap:18px;margin-top:20px}
+.hero-media{height:320px;border-radius:14px; background-size:cover; background-position:center; position:relative; box-shadow:0 20px 40px rgba(2,6,9,0.6)}
+.label{position:absolute;left:12px;top:12px;background:rgba(0,0,0,0.35);padding:6px 8px;border-radius:999px}
+.game-meta h1{margin:0 0 6px}
+.game-actions .btn{margin-right:10px}
+.media-grid{display:flex;gap:8px;margin-top:8px}
+.media-thumb{width:32%;height:120px;border-radius:8px}
+
+/* footer */
+.site-footer{padding:18px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px;}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column}
+  .game-hero{grid-template-columns:1fr; }
+  .two-col{grid-template-columns:1fr}
+  .top-nav{display:none}
+  .container{padding:18px}
+}
+
+.screen-content img {
+  width: 100%;
+  max-width: 500px; /* keeps it from getting too huge */
+  border-radius: 16px; /* modern rounded edges */
+  border: 2px solid #4fa3ff; /* cyber blue outline */
+  box-shadow: 
+    0 0 20px rgba(79, 163, 255, 0.4),
+    0 0 40px rgba(79, 163, 255, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover glow effect */
+.screen-content img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 
+    0 0 40px rgba(79, 163, 255, 0.7),
+    0 0 80px rgba(79, 163, 255, 0.3);
+}
+
+
+.glow-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.glow-wrap::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(79,163,255,0.3), transparent 70%);
+  filter: blur(25px);
+  z-index: -1;
+}
+
+/* ===== Contact Page ===== */
+.contact-section {
+  padding: 100px 20px;
+  color: #e0e6ef;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #4fa3ff;
+}
+
+.contact-section .lead {
+  color: #b0b8c3;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(79, 163, 255, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #9fb8d1;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0e1623;
+  color: #e0e6ef;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #4fa3ff;
+  box-shadow: 0 0 10px rgba(79, 163, 255, 0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4fa3ff, #2c6ef8);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(79, 163, 255, 0.5);
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-info h3 {
+  margin-bottom: 15px;
+  color: #4fa3ff;
+}
+
+.contact-info a {
+  color: #4fa3ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Donation Page ===== */
+.donate-section {
+  padding: 100px 20px;
+  text-align: center;
+  color: #e0e6ef;
+}
+
+.donate-section h2 {
+  font-size: 2.5rem;
+  color: #4fa3ff;
+  margin-bottom: 15px;
+}
+
+.donate-section .lead {
+  font-size: 1.1rem;
+  color: #b0b8c3;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+.donation-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.donation-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid #334155;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(79, 163, 255, 0.1);
+}
+
+.donation-card:hover {
+  transform: translateY(-10px);
+  border-color: #4fa3ff;
+  box-shadow: 0 0 30px rgba(79, 163, 255, 0.3);
+}
+
+.donation-card h3 {
+  color: #4fa3ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.donation-card p {
+  color: #b0b8c3;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #4fa3ff;
+  color: #4fa3ff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #4fa3ff;
+  color: #0a0f1c;
+  box-shadow: 0 0 20px rgba(79, 163, 255, 0.5);
+}
+
+.donation-footer p {
+  margin-bottom: 15px;
+  color: #b0b8c3;
+}
+
+a {
+    text-decoration: none;
+}
