@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CyberVale Studios</title>
+  <title>Support Us | CyberVale Studios</title>
 
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -11,16 +11,16 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Meta for theme color -->
   <meta name="theme-color" content="#071019" />
-
   <link rel="icon" type="image/png" href="images/edited-photo (1) (1).png">
 </head>
+
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo-wrap">
-          <img src="images/edited-photo (1).png" alt="Cybervale Studios Logo"/>
+        <img src="images/edited-photo (1).png" alt="Cybervale Studios Logo"/>
         <div>
           <div class="brand">CyberVale</div>
           <div class="sub">Studios</div>
@@ -32,120 +32,90 @@
         <a href="#games-preview">Featured Games</a>
         <a href="games.html">Games Page</a>
         <a href="news.html">News</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="donate.html">Support Us</a>
+        <a href="donate.html" class="active">Support Us</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="home" class="hero">
+
+    <!-- Donation Hero Section -->
+    <section class="hero small-hero">
       <div class="container hero-inner">
         <div class="hero-left">
-          <h1>Creating worlds beyond the code</h1>
-          <p class="lead">Cybervale Studios is an indie studio building cinematic, high-immersion experiences that blend realism, adventure, and emotional storytelling. Explore our projects, see development updates, and more.</p>
+          <h1>Support CyberVale Studios</h1>
+          <p class="lead">
+            Every bit of support helps us build more immersive worlds and innovative experiences.
+            If you enjoy our work, consider helping us keep the lights on — and the pixels glowing.
+          </p>
           <div class="cta-row">
-            <a class="btn primary" href="games.html">See Games</a>
-            <a class="btn ghost" href="news.html">Latest Updates</a>
-            <a class="btn ghost" href="donate.html">Support Us</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="hero-art">
-            <!-- Placeholder for hero image or animated canvas -->
-            <div class="screen-content">
-            <div class="glow-wrap">
-             <img src="images/pexels-photo-gaminggear.jpeg" alt="Intro Image">
-           </div>
+            <a class="btn primary" href="#donation-options">View Options</a>
+            <a class="btn ghost" href="https://gofund.me/5ad6ba781" target="_blank">GoFundMe</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Games preview -->
-    <section id="games-preview" class="section dark">
+    <!-- Donation Options -->
+    <section id="donation-options" class="section dark">
       <div class="container">
-        <h2 class="section-title">Featured Games</h2>
-        <p class="muted">Click a card to view the full game page.</p>
+        <h2 class="section-title">Choose a Support Tier</h2>
+        <p class="muted">Your support directly fuels development and creative growth.</p>
 
         <div class="games-grid">
-          <!-- Game card 1 -->
-          <a class="game-card" href="amongthewalls.html">
+
+          <!-- Card 1 -->
+          <a class="game-card" href="https://gofund.me/5ad6ba781" target="_blank">
             <div class="thumbnail" style="background-image:linear-gradient(135deg,#05202a,#06303f);">
-              <div class="tag">In Development</div>
+              <div class="tag">$5 Tier</div>
             </div>
             <div class="game-info">
-              <h3>Among The Walls</h3>
-              <p class="muted"></p>
+              <h3>Small Boost</h3>
+              <p class="muted">A quick boost for late-night coding sessions.</p>
             </div>
           </a>
 
-          <!-- Game card 2 -->
-          <a class="game-card" href="">
+          <!-- Card 2 -->
+          <a class="game-card" href="https://gofund.me/5ad6ba781" target="_blank">
             <div class="thumbnail" style="background-image:linear-gradient(135deg,#071121,#11324f);">
-              <div class="tag">Unannouced</div>
+              <div class="tag">$25 Tier</div>
             </div>
             <div class="game-info">
-              <h3>Game Not Annouced</h3>
-              <p class="muted"></p>
+              <h3>Core Supporter</h3>
+              <p class="muted">A steady spark that keeps development flowing.</p>
             </div>
           </a>
 
-          <!-- Game card 3 -->
-          <a class="game-card" href="">
+          <!-- Card 3 -->
+          <a class="game-card" href="https://gofund.me/5ad6ba781" target="_blank">
             <div class="thumbnail" style="background-image:linear-gradient(135deg,#07111b,#18354d);">
-              <div class="tag">Unannouced</div>
+              <div class="tag">$50 Tier</div>
             </div>
             <div class="game-info">
-              <h3>Game Not Annouced</h3>
-              <p class="muted"></p>
+              <h3>Big Supporter</h3>
+              <p class="muted">Helps improve tools, production, and long-term goals.</p>
             </div>
           </a>
+
         </div>
+
+        <div style="text-align:center; margin-top:40px;">
+          <a class="btn ghost" href="https://gofund.me/5ad6ba781" target="_blank">GoFundMe Page</a>
+        </div>
+
       </div>
     </section>
 
-    
-
-    <!-- About -->
-    <section id="about" class="section dark">
-      <div class="container">
-        <h2 class="section-title">About CyberVale</h2>
-        <div class="two-col">
-          <div>
-            <p>Cybervale Studios is an indie game development "team" (nope just me) dedicated to crafting cinematic, high-immersion experiences that blend realism, adventure, and emotional storytelling. We specialize in building atmospheric worlds where every detail—lighting, sound, physics, and character design—comes together to create games that feel truly alive.</p>
-            <p>At Cybervale Studios, we push the boundaries of visual realism and interactive storytelling. Our focus is on high-quality worldbuilding, innovative gameplay mechanics, and deep environmental narratives that let players discover stories hidden in the smallest details. From cozy spaces to breathtaking, danger-filled environments, we design games that encourage curiosity, creativity, and exploration. </p>
-            <p>Driven by passion and powered by imagination, Cybervale Studios is shaping the future of immersive gaming—one world, one story, one experience at a time.</p>
-            <ul class="list">
-              <li>Founded in 2025 by Logan Graves</li>
-              
-            </ul>
-          </div>
-          <div>
-            <h4>Team</h4>
-            <p class="muted">Logan Graves </p>
-            <div class="people">
-              <div class="person">Lead Designer </div>
-              <div class="person">Technical Artist </div>
-              <div class="person">Composer  </div>
-              <div class="person">Developer</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container">
         <div>© CyberVale Studios — Built with ♥</div>
         <div class="footer-links"><a href="#">Privacy</a> · <a href="#">Press Kit</a></div>
       </div>
     </footer>
-  </main>
 
-  <script src="script.js"></script>
+  </main>
 </body>
 </html>
